@@ -1,0 +1,158 @@
+/*	STYLE FOR NEW SITE (GRID LAYOUT)  
+********************************/
+
+/*	IMPORT STYLES	*/
+@import url(normalize.css);
+@import url(grid.css);
+
+/*	ALL  */
+body {
+    font-size: 20px;
+    margin: 0;
+    font: Arial;
+    color: #333333;
+}
+
+h1 {
+    line-height: 35px;
+    font-size: 30px;
+    font-family: "Arial";
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: "Arial";
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Arial";
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: "Arial";
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+p {
+    margin: 0 0 20px 0;
+    color: #333333;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+a {
+    color: #333333;
+}
+
+.wrapper {
+	margin:0 auto;
+	max-width: 960px; 
+}
+
+.clear {
+    clear: both;
+}
+
+/*	HEADER  */
+.header-in {
+    background: #7ba33b;
+    height: 100px;
+}
+
+.logo {
+    float: left;
+    margin-left: 65px;
+}
+
+.menu1 {
+    float: left;
+    text-transform: capitalize;
+    font-size: 25px;
+    margin: 28px 0 0 150px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu1 li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu1 a {
+	border-radius: 5px;
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.act-menu1,
+.menu1 a:hover{
+	background:#f8822e;
+}
+
+
+/*	CONTENT LEFT    */
+.cont-left-in{
+    min-height: 400px;
+    margin: 40px 50px 50px 80px;
+}
+
+/*	CONTENT RIGHT    */
+.cont-right-in {
+    background: #f5f5f5;
+    min-height: 400px;
+    padding: 20px;
+    margin: 10px 10px 20px 20px;
+}
+
+
+
+/*	FOOTER   */
+.footer-in {
+    background: #000000;
+    font-size: 14px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: -23px; /*	отступ внизу откуд ?	*/
+}
+
+.footer-in p{
+    color: #fff;
+    display: inline-block;
+   	margin-top: 40px;
+}
+
+/*	IMG DECOR   */
+.img-left {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+
+.img-right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+
