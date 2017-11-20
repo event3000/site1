@@ -48,25 +48,25 @@
                     <p><strong>Если у вас есть какие либо вопросы, Вы всегда сможете с нами связаться через контактную форму обратной связи:</strong></p>
 
                     <form action="#" method="post">
-                        <fieldset>
+                        <fieldset class="fieldset-contact">
                             <div>
-                                <label for="name">Имя</label>
-                                <input type="text" name="" id="name" placeholder="Введите ваше имя" required>
+                                <label for="name">Имя&nbsp;&nbsp;</label>
+                                <input type="text" name="" id="name-cnt" placeholder="Введите ваше имя" required>
                             </div>
 
                             <div>
                                 <label for="email">Email</label>
-                                <input type="email" name="" id="email" placeholder="Введите ваш email" required>
+                                <input type="email" name="" id="email-cnt" placeholder="Введите ваш email" required>
                             </div>
-
+                            <br>
                              <div>
-                                 <label for="text_area">Ваше сообщение</label>
-                                 <textarea rows="6" id="text_area"></textarea>
+                                 <label for="text_area">Ваше сообщение</label><br>
+                                 <textarea class="right-textarea" rows="6" id="textarea-cnt"></textarea>
                              </div>
 
 
                             <br>
-                            <input type="submit" name="" value="Отправить">
+                            <input class="btn" type="submit" name="" value="Отправить">
                         </fieldset>
                     </form>
                     
@@ -76,48 +76,53 @@
             <!-- CONTENT RIGHT -->
             <div class="col-3" >
                 <div class="cont-right-in">
-                    <h3>Регистрация:</h3>
+                    <h2>Регистрация:</h2>
+                    <hr>
 
                     <form action="#" method="post">
                         <fieldset>
                             <div>
-                                <label for="name-reg">Имя</label>
-                                <input type="text" name="" id="name-reg" placeholder="Введите ваше имя" required>
+                                <label for="name">Имя&nbsp;&nbsp;</label>
+                                <input type="text" name="" id="name" placeholder="Введите ваше имя" required>
                             </div>
 
                             <div>
-                                <label for="email-reg">Email</label>
-                                <input type="email" name="" id="email-reg" placeholder="Введите ваш email" required>
+                                <label for="email">Email</label>
+                                <input type="email" name="" id="email" placeholder="Введите ваш email" required>
                             </div>
                             <br>
-                            <input type="submit" name="" value="Отправить">
+                            <input class="btn" type="submit" name="form-reg" value="Отправить">
                         </fieldset>
                     </form>
                         <br><br>
 
-                        <h3>Опрос:</h3>
-                        <p>Какие новые разделы блога вы хотели бы видеть на нашем сайте?</p>
+                    <h2>Опрос:</h2>
+                    <hr>
+                    <p>Какие новые разделы блога вы хотели бы видеть на нашем сайте?</p>
 
-                        <form action="#" method="post">
-                            <fieldset>
-                                <div>
-                                    <label><input type="checkbox">Спортивное питание</label>
-                                </div>
-                                <div>
-                                    <label><input type="checkbox">Правильное питание для детей</label>
-                                </div>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <div>
+                                <label><input type="checkbox">Спортивное питание</label>
+                            </div>
+                            <div>
+                                <label><input type="checkbox">Правильное питание для детей</label>
+                            </div>
 
-                                 <div>
-                                     <label for="poll-mess">Свой вариант</label>
-                                     <textarea rows="3" id="poll-mess""></textarea>
-                                 </div>
-                                <br>
-                                <input type="submit" name="" value="Отправить">
-                            </fieldset>
-                        </form>
+                             <div>
+                                 <label for="poll_mess">Свой вариант</label>
+                                 <textarea rows="" class="right-textarea" id="textarea-poll"></textarea>
+                             </div>
+                            <br>
+                            <input class="btn" type="submit" name="form-poll" value="Отправить">
+                        </fieldset>
+                    </form>
                     
                 </div>
             </div>
+
+
+
         </div>
         
         <!-- FOOTER -->

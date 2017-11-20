@@ -9,51 +9,41 @@
 body {
     font-size: 20px;
     margin: 0;
-    font: Arial;
+    font-family: Arial;
     color: #333333;
 }
 
 h1 {
     line-height: 35px;
     font-size: 30px;
-    font-family: "Arial";
     font-weight: lighter;
     margin-top: 0;
     margin-bottom: 20px;
-    color: #333333;
 }
 
 h2 {
     font-size: 24px;
-    font-family: "Arial";
     font-weight: lighter;
     margin-top: 0;
     margin-bottom: 20px;
-    color: #333333;
 }
 
 h3 {
     font-size: 20px;
-    font-family: "Arial";
     font-weight: lighter;
     margin-top: 0;
     margin-bottom: 20px;
-    color: #333333;
 }
 
 h4 {
     font-size: 18px;
-    font-family: "Arial";
     font-weight: lighter;
     margin-top: 0;
     margin-bottom: 20px;
-    color: #333333;
 }
 
 p {
     margin: 0 0 20px 0;
-    color: #333333;
-    font-family: "Arial";
     font-size: 14px;
     line-height: 1.5;
 }
@@ -102,7 +92,6 @@ a {
     padding: 10px;
     display: block;
     text-decoration: none;
-    font-family: Arial;
 }
 
 .act-menu1,
@@ -110,6 +99,28 @@ a {
 	background:#f8822e;
 }
 
+.menu2 {
+    list-style-type: none;
+    font-size: 19px;
+
+}
+
+.menu2 li{
+    margin-bottom:8px;
+    margin-left: -30px;
+}
+
+.menu2 li:before {
+    content: "\00BB  ";
+   }
+
+.menu2 a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.menu2 a:hover{
+    color:#f8822e;
+}
 
 /*	CONTENT LEFT    */
 .cont-left-in{
@@ -117,15 +128,18 @@ a {
     margin: 40px 50px 50px 80px;
 }
 
+.cont-left-in-shop{
+    min-height: 400px;
+    margin: 40px 10px 50px 80px;
+}
+
 /*	CONTENT RIGHT    */
 .cont-right-in {
     background: #f5f5f5;
-    min-height: 400px;
+    min-height:250px;
     padding: 20px;
     margin: 10px 10px 20px 20px;
 }
-
-
 
 /*	FOOTER   */
 .footer-in {
@@ -133,7 +147,8 @@ a {
     font-size: 14px;
     height: 100px;
     text-align: center;
-    margin-bottom: -23px; /*	отступ внизу откуд ?	*/
+    margin-bottom: -25px;
+
 }
 
 .footer-in p{
@@ -155,4 +170,111 @@ a {
     margin-bottom: 25px;
 }
 
+/*  SHOP  */
+.good-info{
+    height: 50px;
+    padding: 0 7px;
+    display: flex;
+    font-weight: 700;
+}
 
+.good-price {
+    padding: 0 7px;
+    font-weight: bold;
+} 
+
+.good-price p{
+    color: #e54242;
+    font-size: 16px;
+} 
+
+a.good-button {
+    text-align: center;
+    display: block;
+    color: #fff; 
+    text-decoration: none;  
+    background: #f8822e;
+    padding: 4px 5px; 
+    outline: none; 
+} 
+
+a.good-button:hover { 
+    background: #f8822e9e;
+} 
+
+a.good-button:active {
+    background: #f8822e9e ; 
+} 
+
+/*  FORM  */
+fieldset {
+    border: none;
+}
+
+.fieldset-contact{
+    padding: 35px 20px;
+    width: 50%;
+    background: #f5f5f5;
+    border: 1px solid #dfdfdf;
+    border-radius:5px;
+}
+
+label {
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+input,
+select,
+textarea {
+    background: #ededed !important;
+    color: #777;
+    height: 34px;
+    padding: 0px 5px;
+    font-size: 14px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.right-textarea{
+    width: 230px;
+    height: 50px;
+}
+
+.btn {
+    width: auto;
+    padding: 9px 15px;
+    background: #f8822e !important;
+    border: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor:pointer;
+}
+
+/*  FLEXBOX FOR SHOP GOODS  */
+
+.good{
+    box-sizing: border-box;
+    width: 205px;
+    height: auto;
+    border: 1px solid #dfdfdf;
+    margin: 0 9px 30px 0;
+}
+
+.good:hover {
+    box-shadow: 0 0 20px 0 #dfdfdf;
+}
+ .fl-pr-good{
+    display: flex;
+    flex-flow: row wrap;
+ }
+
+ .fl-ch-good {
+
+ }
