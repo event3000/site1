@@ -1,4 +1,4 @@
-/*	STYLE FOR NEW SITE (GRID LAYOUT)  
+/*	SITE 1 - STYLE FOR NEW SITE (GRID LAYOUT)  
 ********************************/
 
 /*	IMPORT STYLES	*/
@@ -181,7 +181,7 @@ a {
 }
 
 .cont-left-in img{
-    max-width:100%;
+    max-width:100%;  /*диспл блок*/
 }
 
 /*  SHOP  */
@@ -283,7 +283,7 @@ textarea {
 
 .good:hover {
     box-shadow: 0 0 20px 0 #dfdfdf;
-}
+}ы
  .fl-pr-good{
     display: flex;
     flex-flow: row wrap;
@@ -335,7 +335,7 @@ textarea {
 @media screen and (max-width: 815px) {
     .menu1 {
         display: none;
-        /* позже добавление кнопки моб. меню */
+       
     }
     
  }

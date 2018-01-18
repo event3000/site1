@@ -19,21 +19,21 @@
                 <div class="header-in">
 
                     <div class="logo">
-                        <a href="index.html"><img src="img/logo.png" alt="Health and Eating" title="Перейти на главную"></a>
+                        <a href="index.php"><img src="img/logo.png" alt="Health and Eating" title="Перейти на главную"></a>
                     </div>
 
                     <ul class="menu1">
                         <li>
-                            <a href="index.html">Главная</a>
+                            <a href="index.php">Главная</a>
                         </li>
                         <li>
-                            <a href="blog.html">Блог</a>
+                            <a href="blog.php">Блог</a>
                         </li>
                         <li>
-                            <a class="act-menu1" href="shop.html">Магазин</a>
+                            <a class="act-menu1" href="shop.php">Магазин</a>
                         </li>
                         <li>
-                            <a href="contacts.html">Контакты</a>
+                            <a href="contacts.php">Контакты</a>
                         </li>
                     </ul>
                 </div>

@@ -4,38 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Блог - Health and Eating</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="description" content="" >
+    <meta name="keywords" content="" >
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-
     <div id="wrapper">
-        <div id="header">
-            <div class="header-in">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt="Health and Eating"></a>
-                </div>
-                <ul id="navbar">
-                    <li>
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Блог</a>
-                    </li>
-                    <li>
-                        <a href="shop.html">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+       
+       <!-- HEADER -->
+        <div id="header" class="row">
+            <div class="col-12">
+                <div class="header-in">
 
-        <div id="fullcontent">
-            <div id="content">
-                <div class="content-in">
+                    <div class="logo">
+                        <a href="index.php"><img src="img/logo.png" alt="Health and Eating" title="Перейти на главную"></a>
+                    </div>
+
+                    <ul class="menu1">
+                        <li>
+                            <a href="index.php">Главная</a>
+                        </li>
+                        <li>
+                            <a class="act-menu1" href="blog.php">Блог</a>
+                        </li>
+                        <li>
+                            <a href="shop.php">Магазин</a>
+                        </li>
+                        <li>
+                            <a href="contacts.php">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+        
+        <!-- CONTENT FULL-->
+        <div id="fullcontent" class="row">
+            <!-- CONTENT LEFT -->
+            <div class="col-9">
+                <div class="cont-left-in">
 
                     <h1>Блог</h1>
 
@@ -89,32 +98,37 @@
                         <div class="clear"></div>
                     </div>
 
+                   
                 </div>
             </div>
 
-            <div id="sidebar">
-                <div class="sidebar-in">
+            <!-- CONTENT RIGHT -->
+            <div class="col-3" >
+                <div class="cont-right-in">
                     <h2>Разделы:</h2>
-                    <ul>
+                    <hr>
+                    <ul class="menu2">
                         <li><a href="#">Правильное и здоровое питание</a></li>
                         <li><a href="#">Лечебное питание</a></li>
                         <li><a href="#">Питание для похудения</a></li>
                         <li><a href="#">Полезные рецепты</a></li>
                         <li><a href="#">Витамины, микроэлементы, биодобавки</a></li>
                         <li><a href="#">Энциклопедия полезных продуктов</a></li>
-                    </ul>                   
-                   
+                    </ul>
+                    
                 </div>
             </div>
-
-            <div class="clear"></div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div id="footer" class="row">
+            <div class="col-12">
+                <div class="footer-in">
+                    <p>Health and Eating © 2017</p>
+                </div>        
+            </div>  
         </div>
 
-        <div id="footer">
-            <div class="footer-in">
-                <p>Health and Eating © 2017</p>
-            </div>
-        </div>
     </div>
 </body>
 
