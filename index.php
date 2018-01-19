@@ -1,35 +1,40 @@
-<?php 
-    // переадресация подкл-ем отдельно реквайр или инклюд
-    // function hello ($name) {
-    //     return "Привет {$name}";
-    // }
+<?php
+    require_once("_validation.php");
+    
+    $errors = array(); // создаем массив для ошибок
+    $message = ""; // создаем массив для сообщений
+    
+    // если была отправка
+    if (isset($_POST['submit'])) { 
+ 
+        $username = strip_tags(trim($_POST["username"]));
+        $password = strip_tags(trim($_POST["password"]));
 
-    function redirect_to ($new_location) {
-        header("Location: " . $new_location);
-        exit;
-    }
-    /////////
-
-
-    if ( isset($_POST["submit"]) ) { // если отправка тру
-        // форма отправлена
-        $username = $_POST["username"]; // доб в переменную знач из ПОСТ массива 
-        $password = $_POST["password"];
-
-        if ($username == "aaa" && $password == "zzz") {
-            // успешный вход
-            redirect_to("blog.php");
-        } else {
-            $message = "Произошли ошибки"; // ошибка входа
+        // Валидация
+        $fields_required = array("username", "password");
+        foreach($fields_required as $field) {
+            $value = trim($_POST[$field]);
+            if (!has_empt($value)) {
+                $errors[$field] = ucfirst($field) . " нужно заполнить";
+            }
         }
         
-    } else {
-        // форма не отправлена
-        $username ="";
-        $message = "Введите ваш логин и пароль";
-    }
+        $fields_with_max_lengths = array("username" => 28, "password" => 8);
+        validate_max_lengths($fields_with_max_lengths);
+        
+        if (empty($errors)) {
+            // попытка входа
+            if ($username == "ben" && $password == "111") {
+                $message = "<p style='color: #f8822e; font-size:20px;'>Вы успешно вошли как '{$username}'</p>";
+            } else {
+                $message = "<p style='color: #f8822e;'>Имя / пароль не совпадают</p>";
+            }
+        }
 
-    // var_dump( $_POST ); // можно оставить для проверки 
+    } else {
+        $username = "";
+        $message = "Войдите под своим логином:";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -115,23 +120,30 @@
                     <h2>Авторизация:</h2>
                     <hr>
 
+        
+        
                     <form action="index.php" method="post">
                         <fieldset>
+                    <?php echo $message; ?>
+                    <?php echo form_errors($errors); ?>
+    
+    
                             <div>
+                                <br>
                                 <label for="name">Имя&nbsp;&nbsp;</label>
-                                <input type="text" name="username" id="name" placeholder="Введите ваше имя" value="<?php echo htmlspecialchars($username);  ?>" >
+                                <input type="text" name="username" placeholder="Введите ваше имя" value="<?php echo htmlspecialchars($username); ?>" />
                             </div>
 
                             <div>
                                 <label for="password">Pass</label>
-                                <input type="password" name="password" id="password" placeholder="Введите ваш пароль" >
-                            </div>
+                                <input type="password" name="password" value="" placeholder="Введите ваш пароль" />
+                            </div><br>
 
-                            <div><?php echo $message; ?></div>
-                            <br>
-                            <input class="btn" type="submit" name="form-reg" value="Отправить">
-                        </fieldset>
+                            <input class="btn" type="submit" name="submit" value="Отправить" />
+                        <fieldset>
                     </form>
+
+
                         <br><br>
 
                     <h2>Опрос:</h2>
