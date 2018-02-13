@@ -1,0 +1,21 @@
+{
+    "name": "web/concert",
+    "description": "tickets for sale",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "beta",
+    "repositories": [
+        {
+            "type":"git",
+            "url":"https://github.com/web-development-courses/engine"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Web\\Concert\\": "private/"
+        }
+    },
+    "require": {
+        "web/engine": "dev-master"
+    }
+}

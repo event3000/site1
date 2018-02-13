@@ -12,7 +12,7 @@
                     <div class="fl-pr-good" >
 
                         <div class="fl-ch-good good" >
-                           <img src="img/good01.jpg" alt="">
+                           <img src="../static/img/good01.jpg" alt="">
                             <div class="good-info">
                                 <p>Weider Multi Vita</p>
                             </div>
@@ -25,7 +25,7 @@
                         </div> 
                         
                         <div class="fl-ch-good good" >
-                           <img src="img/good02.jpg" alt="">
+                           <img src="../static/img/good02.jpg" alt="">
                             <div class="good-info">
                                 <p>Weider Zinc Immune Complex</p>
                             </div>
@@ -38,7 +38,7 @@
                         </div> 
 
                         <div class="fl-ch-good good" >
-                           <img src="img/good03.jpg" alt="">
+                           <img src="../static/img/good03.jpg" alt="">
                             <div class="good-info">
                                 <p>Optimum Nutrition Opti-Women</p>
                             </div>
@@ -51,7 +51,7 @@
                         </div>      
                                            
                         <div class="fl-ch-good good" >
-                           <img src="img/good04.jpg" alt="">
+                           <img src="../static/img/good04.jpg" alt="">
                             <div class="good-info">
                                 <p>Twinlab Daily One Caps without Iron</p>
                             </div>
@@ -64,7 +64,7 @@
                         </div> 
 
                         <div class="fl-ch-good good" >
-                           <img src="img/good05.jpg" alt="">
+                           <img src="../static/img/good05.jpg" alt="">
                             <div class="good-info">
                                 <p>NOW Foods B-6 50 mg</p>
                             </div>
@@ -77,7 +77,7 @@
                         </div>  
 
                         <div class="fl-ch-good good" >
-                           <img src="img/good06.jpg" alt="">
+                           <img src="../static/img/good06.jpg" alt="">
                             <div class="good-info">
                                 <p>Olimp Bio Silica</p>
                             </div>
@@ -90,7 +90,7 @@
                         </div>   
 
                         <div class="fl-ch-good good" >
-                           <img src="img/good07.jpg" alt="">
+                           <img src="../static/img/good07.jpg" alt="">
                             <div class="good-info">
                                 <p>Labrada Nutrition Lean Body Men`s Multi-Vitamin</p>
                             </div>
@@ -103,7 +103,7 @@
                         </div>     
 
                         <div class="fl-ch-good good" >
-                           <img src="img/good08.jpg" alt="">
+                           <img src="../static/img/good08.jpg" alt="">
                             <div class="good-info">
                                 <p>Maxler Daily Max</p>
                             </div>
@@ -116,7 +116,7 @@
                         </div>   
 
                         <div class="fl-ch-good good" >
-                           <img src="img/good09.jpg" alt="">
+                           <img src="../static/img/good09.jpg" alt="">
                             <div class="good-info">
                                 <p>Maxler VitaWomen</p>
                             </div>
@@ -129,7 +129,7 @@
                         </div>   
 
                         <div class="fl-ch-good good" >
-                           <img src="img/good10.jpg" alt="">
+                           <img src="../static/img/good10.jpg" alt="">
                             <div class="good-info">
                                 <p>NOW Foods Adam Male Multi</p>
                             </div>

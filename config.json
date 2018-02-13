@@ -1,0 +1,50 @@
+{
+  "db": {
+    "servername":"localhost",
+    "db_name":"site1",
+    "username":"user",
+    "password":"123"
+  },
+  "urls": {
+    "index": {
+      "path":"/",
+      "controller":"\\Web\\Concert\\Controllers\\IndexController::indexAction"
+    },
+    "blog": {
+      "path":"/blog",
+      "controller":"\\Web\\Concert\\Controllers\\BlogController::blogAction"
+    },
+    "shop": {
+      "path":"/shop",
+      "controller":"\\Web\\Concert\\Controllers\\ShopController::shopAction"
+    },
+    "contacts": {
+      "path":"/contacts",
+      "controller":"\\Web\\Concert\\Controllers\\ContController::contAction"
+    },
+    "all_shows": {
+      "path":"/shows",
+      "controller":"\\Web\\Concert\\Controllers\\ShowsController::showsAction"
+    },
+    "show": {
+      "path":"/show/{id}",
+      "controller":"\\Web\\Concert\\Controllers\\ShowsController::showAction"
+    },
+    "past_shows": {
+      "path":"/pastshows",
+      "controller":"\\Web\\Concert\\Controllers\\ShowsController::pastshowsAction"
+    },
+    "reg_account": {
+      "path":"/account/registration",
+      "controller":"\\Web\\Concert\\Controllers\\AccountController::registrationAction"
+    },
+    "login_account": {
+      "path":"/account/login",
+      "controller":"\\Web\\Concert\\Controllers\\AccountController::loginAction"
+    },
+    "account": {
+      "path":"/account",
+      "controller":"\\Web\\Concert\\Controllers\\AccountController::accountAction"
+    }
+  }
+}

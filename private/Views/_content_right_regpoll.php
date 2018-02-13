@@ -6,7 +6,7 @@
 
             
         
-                    <form action="index.php" method="post">
+                    <form action="/" method="post">
                         <fieldset>
                     <?php echo $message; ?>
                     <?php echo form_errors($errors); ?>
